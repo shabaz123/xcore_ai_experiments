@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run first_example.xe",
+            "command": "xrun",
+            "args": [
+                // each argument is supplied on the command line is provided in the list of strings below
+                "--io",
+                "${workspaceFolder}/bin/first_example.xe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash first_example.xe",
+            "command": "xflash",
+            "args": [
+                // each argument is supplied on the command line is provided in the list of strings below
+                "${workspaceFolder}/bin/first_example.xe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
